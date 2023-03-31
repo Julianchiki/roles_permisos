@@ -1,0 +1,100 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_section{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 80px 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+#name_product{
+    text-align: center;
+    font-weight: bold;
+    margin: 6px;
+    padding: 8px 80px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block; 
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+#date_expiry{
+    font-weight: bold;
+    margin: 6px;
+    padding: 8px 105px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block; 
+}
+#company{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 8px 80px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block; 
+}
+
+
+.container_boton{
+    justify-content: center;
+    text-align: center;
+}
+
+.boton{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    padding: 0px 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 100, 255);
+}
+
+.boton:hover{
+    background-color: rgb(0, 119, 255);
+}
+
+
+

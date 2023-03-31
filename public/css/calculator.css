@@ -1,0 +1,57 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_section{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 80px 40px;
+    background-color: red;
+}
+
+h1{
+    padding-bottom: 30px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#numero1, #numero2{
+    font-weight: bold;
+    margin: 6px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.container_boton{
+    justify-content: center;
+    text-align: center;
+}
+
+.boton{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    padding: 0px 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: white;
+}
+
+.boton:hover{
+    background-color: rgb(192, 189, 194);
+}

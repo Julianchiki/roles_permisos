@@ -1,0 +1,24 @@
+.texto{
+    margin-left: 500px;
+    display: inline-block;
+}
+
+.texto h1{
+    font-size: 4rem;
+    color: black;
+    overflow: hidden;
+    border-right: .15em solid blueviolet;
+    white-space: nowrap;
+    animation: typing 1.5s steps(20, end) forwards,
+    bliking 1s infinite;
+}
+
+@keyframes typing{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes bliking{
+    from {border-color: transparent;}
+    to {border-color: blueviolet;}
+}

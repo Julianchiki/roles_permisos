@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ 
+    font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.texto h2{
+    font-family: 'Permanent Marker', cursive;
+}
+.color-acento{ 
+    color:red;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+#hero h1{
+    font-size: 5em;
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/ronnie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#coachs{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#coachs .container{
+    padding: 100px 0px;
+}
+
+#coachs h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+
+#coachs p{
+    display: none;
+}
+
+#coachs .coach{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.coach:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("../img/cbum.png");
+}
+
+.coach:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("../img/arnold.jpg");
+}
+.coach:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("../img/ramon-dino.jpeg");
+}
+.coach:nth-child(4){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../img/ColemanTheking.jpg");    
+}
+
+#membresias{
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+summary{
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    padding: 20px;
+    margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#info{
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#membresias h2{
+    text-align: center;
+    margin-top: 0;
+    font-size: 3.2em;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+#footer{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+.controls {
+    width: 100%;
+    background: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid blueviolet;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros h2{
+        margin-top: 0;
+    }
+
+    #nosotros .img-container{
+        background-image:  url("../img/gymlogo.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #coachs .coach-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #coachs p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #coachs h3{
+        margin-top: 0;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    #coachs .coach{
+        padding: 15px;
+    }
+
+    #stock h2{
+        margin-top: 0;
+        font-size: 3.2em;
+        font-family: 'Permanent Marker', cursive;
+        color: red;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+    #form{
+        width: 400px;
+        background: rgb(236, 236, 236);
+        padding: 30px;
+        margin: auto;
+        margin-top: 0px;
+        border-radius: 4px;
+        font-family: 'calibri';
+    }
+    
+
+    #form h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .controls {
+        width: 100%;
+        background: rgb(230, 230, 230);
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid blueviolet;
+        font-family: 'calibri';
+        font-size: 18px;
+    }
+}

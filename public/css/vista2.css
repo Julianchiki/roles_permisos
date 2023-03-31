@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5em;
+    color: black;
+}
+
+.style-table{
+    border: 1px solid black;
+    margin: 25px 0;
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.style-table thead tr{
+    background-color: red;
+    color: #fff;
+}
+
+.style-table th, .style-table td{
+    padding: 12px 15px;
+}
+
+.acordion{
+    background-color: #f2f2f2;
+    width: 80%;
+    padding: 1.5em;
+    margin: 60px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border-left: 4px solid red;
+}
+
+input{
+    display: none;
+}
+
+.link{
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+p{
+    overflow: hidden;
+}
+
+.acordion:has(:checked){
+    --rows:1fr;
+}
+
+#pecho{
+    display: none;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+#footer{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container{
+    justify-content: flex-end;
+}
